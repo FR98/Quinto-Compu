@@ -2,18 +2,18 @@ from navegador import Navegador
 
 tu_navegador = Navegador()
 
-op = "si"
-while op == "si":
-	menu = int(input("""
+menu = int(input("""
 	1. Crear nueva tab
 	2. Cambiar URL de un tab
 	3. Cerrar un tab
 	4. Cerrar todos los tabs
 	5. Mostrar mis tabs
-	6. Guardar mis tabs
-	7. Salir 
+	6. Guardar lista de tabs
+	7. Guardar HTML de un tab
+	8. Salir 
 """))
 
+while menu != 8:
 	if menu == 1:
 		nombre = input("Nombre del tab? ")
 		url = input("Url: ")
@@ -36,7 +36,16 @@ while op == "si":
 	elif menu == 6:
 		tu_navegador.guardar_tabs()
 	elif menu == 7:
-		print("Adios")
-		break
+		tab = int(input("Cual tab desea modificar? "))
+		tu_navegador.guardar_html(tab)
 
-	op = input("Desea ver el menu? ")
+	menu = int(input("""
+	1. Crear nueva tab
+	2. Cambiar URL de un tab
+	3. Cerrar un tab
+	4. Cerrar todos los tabs
+	5. Mostrar mis tabs
+	6. Guardar lista de tabs
+	7. Guardar HTML de un tab
+	8. Salir 
+"""))
