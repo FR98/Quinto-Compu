@@ -1,4 +1,5 @@
 from navegador import Navegador
+from tab import Tab
 
 tu_navegador = Navegador()
 
@@ -19,12 +20,12 @@ while menu != 8:
 		url = input("Url: ")
 		tu_navegador.crear_tab(url, nombre)
 	elif menu == 2:
-		tab = int(input("Cual tab desea modificar? "))
-		nombre = input("Nombre del tab? ")
-		url = input("Url: ")
-		tu_navegador.modificar_tab(url, nombre, tab)
+		tab = input("Nombre del tab que desea modificar? ")
+		nombre_nuevo = input("Nombre nuevo del tab? ")
+		url_nueva = input("Url: ")
+		tu_navegador.modificar_tab(url_nueva, nombre_nuevo, tab)
 	elif menu == 3:
-		tab = int(input("Que tab desea cerrar? "))
+		tab = input("Nombre del tab que desea cerrar? ")
 		tu_navegador.cerrar(tab)
 	elif menu == 4:
 		pre = input("Esta seguro? ")
@@ -32,7 +33,7 @@ while menu != 8:
 			tu_navegador.vaciar()
 	elif menu == 5:
 		for i in tu_navegador.tabs:
-			print(tu_navegador.tabs[i])
+			print((tu_navegador.tabs[i].nombre)+" "+(tu_navegador.tabs[i].url))
 	elif menu == 6:
 		tu_navegador.guardar_tabs()
 	elif menu == 7:
