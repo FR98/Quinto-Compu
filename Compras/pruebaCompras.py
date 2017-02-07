@@ -8,4 +8,4 @@ while op == "si":
 	op = input("Desea agregar otro producto? ")
 
 for producto, cantidad in productos.items():
-	print(producto, "\t", cantidad)
+	print(producto, "\t", cantidad) #\t es un tab
