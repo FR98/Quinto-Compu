@@ -1,5 +1,4 @@
 from navegador import Navegador
-from tab import Tab
 
 tu_navegador = Navegador()
 menu = int(input("""
