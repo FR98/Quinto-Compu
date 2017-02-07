@@ -1,5 +1,5 @@
 from tab import Tab
-#import requests
+import requests
 
 class Navegador(object):
 	def __init__(self):
@@ -14,18 +14,25 @@ class Navegador(object):
 		self.tabs[tab].nombre = nombre_nuevo
 
 	def cerrar(self, tab):
-		self.tabs.pop(tab) #Arreglar
+		self.tabs.pop(tab)
 
 	def vaciar(self):
 		self.tabs.clear()
 
+	def mostrar(self):
+		for i in self.tabs:
+			print((self.tabs[i].nombre)+" -- "+(self.tabs[i].url))
+
 	def guardar_tabs(self):
 		doc = open("tabs.txt", "w")
 		for i in self.tabs:
-			tab = self.tabs[i] #arrelgar
-			doc.write(tab + "\n")
+			doc.write((self.tabs[i].nombre)+" -- "+(self.tabs[i].url)+"\n")
 		doc.close()
 
 	def guardar_html(self, tab):
-		url = self.tabs[tab]
+		url = self.tabs[tab].url
 		codigo = requests.get(url)
+		nombre_doc = str(self.tabs[tab].nombre) + "HTML" + ".txt"
+		doc = open(nombre_doc, "w")
+		doc.write(codigo.text)
+		doc.close()
