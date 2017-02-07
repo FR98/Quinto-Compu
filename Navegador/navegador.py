@@ -24,7 +24,7 @@ class Navegador(object):
 			print((self.tabs[i].nombre)+" -- "+(self.tabs[i].url))
 
 	def guardar_tabs(self):
-		doc = open("tabs.txt", "w")
+		doc = open("lista_tabs.txt", "w")
 		for i in self.tabs:
 			doc.write((self.tabs[i].nombre)+" -- "+(self.tabs[i].url)+"\n")
 		doc.close()
@@ -32,7 +32,7 @@ class Navegador(object):
 	def guardar_html(self, tab):
 		url = self.tabs[tab].url
 		codigo = requests.get(url)
-		nombre_doc = str(self.tabs[tab].nombre) + "HTML" + ".txt"
+		nombre_doc = str(self.tabs[tab].nombre) + "_HTML" + ".txt"
 		doc = open(nombre_doc, "w")
 		doc.write(codigo.text)
 		doc.close()
