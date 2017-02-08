@@ -31,7 +31,15 @@ class Navegador(object):
 
 	def guardar_html(self, tab):
 		url = self.tabs[tab].url
-		codigo = requests.get(url)
+
+		try:
+			codigo = requests.get(url)
+		except:
+			if "http://" not in url:
+				codigo = requests.get("http://" + url)
+			else:
+				return False
+
 		nombre_doc = str(self.tabs[tab].nombre) + "_HTML" + ".txt"
 		doc = open(nombre_doc, "w")
 		doc.write(codigo.text)
