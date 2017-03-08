@@ -1,0 +1,29 @@
+.top{
+	background-image: url("images/background_header.png");
+}
+.middle{
+	background: white;
+}
+.image{
+	
+}
+.color{
+	background: #15B925;
+}
+.bottom{
+	background: white;
+}
+
+.middle h1{
+	color: green;
+	font-weight: normal;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-bottom: 0px;
+}
+.middle p{
+	color: grey;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 0px;
+}
