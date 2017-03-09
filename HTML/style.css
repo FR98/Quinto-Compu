@@ -1,19 +1,13 @@
 .top{
 	background-image: url("images/background_header.png");
+	background-position: center;
+	background-size: 100%;
+	height: 600px;
 }
 .middle{
 	background: white;
+	height: 200px;
 }
-.image{
-	
-}
-.color{
-	background: #15B925;
-}
-.bottom{
-	background: white;
-}
-
 .middle h1{
 	color: green;
 	font-weight: normal;
@@ -26,4 +20,26 @@
 	padding-left: 200px;
 	padding-right: 200px;
 	padding-top: 0px;
+}
+.middle2{
+	height: 480px;
+}
+.middle2 .image{
+	background-image: url("images/hair.png");
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.middle2 .col{
+	background: #15B925;
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+.middle2 .col h1{
+	font-variant-numeric: 
+}
+.bottom{
+	background: white;
+	height: 500px;
 }
