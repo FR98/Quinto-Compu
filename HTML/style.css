@@ -1,8 +1,44 @@
+body{
+	font-family: "Open Sans", sans-serif;
+}
 .top{
 	background-image: url("images/background_header.png");
 	background-position: center;
 	background-size: 100%;
 	height: 600px;
+	position: relative;
+}
+.top h1{
+	color: white;
+	font-weight: normal;
+	font-size: 80px;
+	position: absolute;
+	left: 100px;
+	top: 150px;
+}
+.top h2{
+	color: white;
+	font-weight: normal;
+	font-size: 40px;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+}
+.top h3{
+	color: grey;
+	font-weight: normal;
+	font-size: 20px;
+	position: absolute;
+	top: 50px;
+}
+.top .h31{
+	left: 550px;
+}
+.top .h32{
+	left: 650px;
+}
+.top .h33{
+	left: 750px;
 }
 .middle{
 	background: white;
@@ -26,15 +62,19 @@
 }
 .middle2 .image{
 	background-image: url("images/hair.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 50%;
 	height: 100%;
 	float: left;
 }
 .middle2 .col{
 	background: #15B925;
+	box-sizing: border-box;
 	width: 50%;
 	height: 100%;
 	float: right;
+	padding: 50px;
 }
 .middle2 .col h1{
 	font-variant-numeric: 
