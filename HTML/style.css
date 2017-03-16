@@ -127,6 +127,34 @@ body{
 	color: #15B925;
 }
 .bottom{
+	position: relative;
 	background: white;
 	height: 500px;
+}
+.bottom h2{
+	position: absolute;
+	color: grey;
+	font-size: 30px;
+	top: 50px;
+	left: 75px;
+}
+.bottom .image1{
+	position: absolute;
+	top: 150px;
+	left: 50px;
+}
+.bottom .image2{
+	position: absolute;
+	top: 150px;
+	left: 350px;
+}
+.bottom .image3{
+	position: absolute;
+	top: 150px;
+	left: 550px;
+}
+.bottom .image4{
+	position: absolute;
+	top: 150px;
+	left: 750px;
 }
