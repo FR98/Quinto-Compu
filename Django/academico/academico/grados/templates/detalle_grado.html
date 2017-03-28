@@ -1,8 +1,17 @@
 <html>
 	<head>
-		<title>Lista Grados</title>
+		<title>{{grado.nombre}}</title>
 	</head>
 	<body>
-		<h1>Lista de Grados</h1>
+		<h1>{{grado.nombre}}</h1>
+		<ul>
+			{% for estudiante in estudiantes %}
+				<li>
+					<p>{{estudiante}}</p>
+				</li>
+			{% empty %}
+				<p>No hay estudiantes</p>
+			{% endfor %}
+		</ul>
 	</body>
 </html>
