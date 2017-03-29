@@ -19,8 +19,22 @@ from grados import views as grados_views
 from estudiantes import views as estudiantes_views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^grados/$', grados_views.lista_grados, name = "lista_grados"),
-    url(r'^estudiantes/', estudiantes_views.lista_estudiantes, name = "lista_estudiantes"),
-    url(r'^grados/(?P<grado_pk>[0-9]+)', grados_views.detalle_grado, name = "detalle_grado"),
+    url(r'^admin/', 
+        admin.site.urls),
+
+    url(r'^grados/$', 
+        grados_views.lista_grados, 
+        name = "lista_grados"),
+    
+    url(r'^estudiantes/', 
+        estudiantes_views.lista_estudiantes, 
+        name = "lista_estudiantes"),
+    
+    url(r'^grados/(?P<grado_pk>[0-9]+)', 
+        grados_views.detalle_grado, 
+        name = "detalle_grado"),
+    
+    url(r'^grados/crear/', 
+        grados_views.crear_grado, 
+        name="crear_grado"),
 ]

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect 
 from grados.models import Grado
 from estudiantes.models import Estudiante
 from grados.forms import GradoForm
@@ -18,3 +18,8 @@ def detalle_grado(request, grado_pk):
 	return render(request, 'detalle_grado.html', {
 		'grado': grado, 
 		'estudiantes': estudiantes})
+
+def crear_grado(request):
+	formulario = GradoForm(data = request.POST)
+	formulario.save()
+	return redirect('/grados/')

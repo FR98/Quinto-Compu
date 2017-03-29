@@ -13,7 +13,8 @@
 				<p>No hay grados</p>
 			{% endfor %}
 			<h2>Nuevo Grado</h2>
-			<form>
+			<form action="/grados/crear/" method="POST">
+				{% csrf_token %}
 				{{grado_form}}
 				<input type="Submit">
 			</form>
