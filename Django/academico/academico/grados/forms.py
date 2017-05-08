@@ -1,10 +1,10 @@
 from django import forms
-from grados.models import Grado
+from agencias.models import Agencia
 
 
-class GradoForm(forms.ModelForm):
+class AgenciaForm(forms.ModelForm):
 	class Meta:
-		model = Grado
+		model = Agencia
 		fields = [
 			'nombre', 
-			'orden']
+			'numero']
