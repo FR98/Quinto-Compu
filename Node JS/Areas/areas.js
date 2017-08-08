@@ -27,5 +27,5 @@ if (figura == 1){
 	var radio = readline.question("Ingrese el radio: ");
 	console.log("El area del circulo es: ", calcular.areaCirculo(radio));
 } else {
-	console.log("Opcion Invalida.")
+	console.log("Opcion Invalida.");
 }
