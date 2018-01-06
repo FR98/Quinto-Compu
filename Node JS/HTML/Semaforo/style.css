@@ -1,0 +1,68 @@
+.semaforo{
+	height: 475px;
+	width: 180px;
+	background-color: black;
+	opacity: 1;
+	position: relative;
+}
+.bombilloRojo{
+	height: 150px;
+	width: 150px;
+	position: relative;
+	left: 10px;
+	border-radius: 100%;
+	border: 2px solid red;
+	background-color: red;
+	opacity: 0.3;
+}
+.bombilloAmarillo{
+	height: 150px;
+	width: 150px;
+	position: relative;
+	left: 10px;
+	border-radius: 100%;
+	border: 2px solid yellow;
+	background-color: yellow;
+	opacity: 0.3;
+}
+.bombilloVerde{
+	height: 150px;
+	width: 150px;
+	position: relative;
+	left: 10px;
+	border-radius: 100%;
+	border: 2px solid green;
+	background-color: green;
+	opacity: 0.3;
+}
+.bombilloRojo_encendido{
+	height: 150px;
+	width: 150px;
+	position: relative;
+	left: 10px;
+	border-radius: 100%;
+	border: 2px solid red;
+	background-color: red;
+	opacity: 1;
+}
+.bombilloAmarillo_encendido{
+	height: 150px;
+	width: 150px;
+	position: relative;
+	left: 10px;
+	border-radius: 100%;
+	border: 2px solid yellow;
+	background-color: yellow;
+	opacity: 1;
+}
+
+.bombilloVerde_encendido{
+	height: 150px;
+	width: 150px;
+	position: relative;
+	left: 10px;
+	border-radius: 100%;
+	border: 2px solid green;
+	background-color: green;
+	opacity: 1;
+}

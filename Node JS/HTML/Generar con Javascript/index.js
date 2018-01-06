@@ -6,7 +6,7 @@ function cuadradoCirculo(state){
 
 	//Creo el cuadrado
 	var divCuadrado = document.createElement("div");
-	divCuadro.className = "cuadro";
+	divCuadrado.className = "cuadrado";
 
 	//Crear el circulo
 	var divCirculo = document.createElement("div");
@@ -18,7 +18,7 @@ function cuadradoCirculo(state){
 	divCirculo.style.width = state.size;
 
 	//Agregar el circulo al cuadrado
-	divCuadro.appendChild(divCirculo);
+	divCuadrado.appendChild(divCirculo);
 
 	//Crear un elemento base
 	var app = document.createElement("div");
@@ -26,7 +26,7 @@ function cuadradoCirculo(state){
 
 	//Agregar titulo y cuadrado al elemento base
 	app.appendChild(h1Titulo);
-	app.appendChild(divCuadro);
+	app.appendChild(divCuadrado);
 
 	return app;
 }
@@ -46,7 +46,7 @@ btnNext.onclick = function(){
 	render(root, cuadradoCirculo, {
 		x: i % 800,
 		y: 100 * Math.sin(i * Math.PI / 200) + 100,
-		color: "purple";
+		color: "purple",
 		size: 30,
 		text: "Bienvenido"
 	});

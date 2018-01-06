@@ -1,0 +1,54 @@
+.divBody{
+	position: relative;
+}
+.divZonaRurple{
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	left: 50px;
+	background: blue;
+	padding: 20px;
+	font-size: 35px;
+}
+.divZonaMapa{
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	left: 400px;
+	background: grey;
+	padding: 20px;
+}
+.divZonaInstrucciones{
+	position: absolute;
+	height: 100px;
+	width: 300px;
+	left: 50px;
+	top: 350px;
+	background: red;
+	padding: 20px;
+}
+.divMapaTexto{
+	height: 290px;
+	width: 290px;
+	font-size: 30px;
+}
+.divInstruccionesTexto{
+	height: 90px;
+	width: 290px;
+	font-size: 30px;
+}
+.btnMapa{
+	position: absolute;
+	left: 750px;
+	top: 100px;
+	font-size: 25px;
+}
+.btnInstrucciones{
+	position: absolute;
+	left: 400px;
+	top: 400px;
+	font-size: 25px;
+}
+.pared{
+	
+}

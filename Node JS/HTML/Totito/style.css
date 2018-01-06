@@ -1,0 +1,111 @@
+.tituloPagina{
+	text-align: center;
+}
+.tablero{
+	position: absolute;
+	height: 470px;
+	width: 470px;
+	background-color: black;
+	text-align: center;
+	font-size: 150px;
+}
+.espacio0_0{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 0px;
+	top: 0px;
+	background-color: white;
+}
+.espacio0_1{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 160px;
+	top: 0px;
+	background-color: white;
+}
+.espacio0_2{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 320px;
+	top: 0px;
+	background-color: white;
+}
+.espacio1_0{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 0px;
+	top: 160px;
+	background-color: white;
+}
+.espacio1_1{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 160px;
+	top: 160px;
+	background-color: white;
+}
+.espacio1_2{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 320px;
+	top: 160px;
+	background-color: white;
+}
+.espacio2_0{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 0px;
+	top: 320px;
+	background-color: white;
+}
+.espacio2_1{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 160px;
+	top: 320px;
+	background-color: white;
+}
+.espacio2_2{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 320px;
+	top: 320px;
+	background-color: white;
+}
+.again{
+	position: absolute;
+	height: 75px;
+	width: 470px;
+	left: 0px;
+	top: 555px;
+	background-color: blue;
+	font-size: 40px;
+	text-align: center;
+	border-radius: 15px;
+}
+.marcador{
+	position: absolute;
+	border-collapse: collapse;
+	border: 10px solid black;
+	top: 0px;
+	left: 550px;
+	height: 320px;
+	width: 320px; 
+}
+caption{
+	background-color: #4F539C;
+	border: 10px solid black;
+	font-size: 100px;
+}
+th, td{
+	border: 5px solid black;
+}
